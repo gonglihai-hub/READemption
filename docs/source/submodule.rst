@@ -29,7 +29,7 @@ args              description
 
 
 module2: Splicing Data Analysis
-================================
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This module is designed to analysis splicing data. The basic command line arguments and descriptions as follows. More available parameters refer to `leafcutter <https://github.com/gonglihai-hub/mOutlierPipe/blob/singleTissue/doc/leafcutter.md>`_, `SPOT <https://github.com/gonglihai-hub/mOutlierPipe/blob/singleTissue/doc/SPOT.md>`
 
@@ -60,7 +60,7 @@ args              description
 
 
 module3: Allele Specific Expression Analysis
-===============================================
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This module is designed to analysis allele specific expression data. The basic command line arguments and descriptions as follows. More available parameters refer to `phASER`
 
