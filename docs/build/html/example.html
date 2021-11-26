@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>example &mdash; moder v0 documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="License" href="license.html" />
+    <link rel="prev" title="submodule" href="submodule.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> moder
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="submodule.html">submodule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="submodule.html#module2-splicing-data-analysis">module2: Splicing Data Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="submodule.html#module3-allele-specific-expression-analysis">module3: Allele Specific Expression Analysis</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">example</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#bam-file">bam file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#vcf-file">vcf file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#gtf-file">GTF file</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#input">INPUT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#eoutliers">eOutliers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#soutliers">sOutliers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#aseoutliers">aseOutliers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#visualize">VISUALIZE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="version.html">version</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">moder</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>example</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/example.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="example">
+<h1>example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h1>
+<p>You can download our example data from <a href="#id2"><span class="problematic" id="id3">`here &lt;&gt;`_</span></a></p>
+<div class="section" id="bam-file">
+<h2>bam file<a class="headerlink" href="#bam-file" title="Permalink to this headline">¶</a></h2>
+<p>We selected 20 sample’s bam files of Small Intestine Terminal Ileum tissue from GTEX, and extracted all sequencing reads which mapped to chromosome 10 using samtools as an example data. Look up <a class="reference external" href="https://samtools.github.io/hts-specs/SAMv1.pdf">documents on github</a> for more infomation.</p>
+</div>
+<div class="section" id="vcf-file">
+<h2>vcf file<a class="headerlink" href="#vcf-file" title="Permalink to this headline">¶</a></h2>
+<p>For above 20 sample, we integrated their variant infomation of chromsome 10 in a vcf file. More specification info of VCF format can be found in <a class="reference external" href="http://samtools.github.io/hts-specs/VCFv4.3.pdf">documents on github</a></p>
+</div>
+<div class="section" id="gtf-file">
+<h2>GTF file<a class="headerlink" href="#gtf-file" title="Permalink to this headline">¶</a></h2>
+<p>Genome annotation file is download from <a class="reference external" href="https://www.gencodegenes.org/human/release_26.html">gencode website</a> with Release 26(GRCh38.p10). In order to run MODER more quickly, in our example data, we only provide genome annotation info of chromosome 10. Refer to <a class="reference external" href="http://www.ensembl.org/info/website/upload/gff.html?redirect=no#:~:text=The%20GFF%20%28General%20Feature%20Format%29%20format%20consists%20of,to%20GFF%20version%202.%20Fields%20must%20be%20tab-separated.">Ensemble-GFF/GTF File Format</a> for more info of GTF format.</p>
+</div>
+</div>
+<div class="section" id="input">
+<h1>INPUT<a class="headerlink" href="#input" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="eoutliers">
+<h1>eOutliers<a class="headerlink" href="#eoutliers" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="soutliers">
+<h1>sOutliers<a class="headerlink" href="#soutliers" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="aseoutliers">
+<h1>aseOutliers<a class="headerlink" href="#aseoutliers" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="visualize">
+<h1>VISUALIZE<a class="headerlink" href="#visualize" title="Permalink to this headline">¶</a></h1>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="submodule.html" class="btn btn-neutral float-left" title="submodule" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="license.html" class="btn btn-neutral float-right" title="License" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, GongLihai.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
